@@ -7,7 +7,7 @@ import java.util.Stack;
  * @Date 2021/9/5
  * @Description
  */
-public class String0020 {
+public class String20 {
     public static void main(String[] args) {
         String s1 = "()";
         System.out.println(isValid(s1));

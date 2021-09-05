@@ -5,7 +5,7 @@ package string;
  * @Date 2021/9/5
  * @Description
  */
-public class String0168 {
+public class String168 {
     public static void main(String[] args) {
         int columnNumber = 701;//26*26+25
 //        System.out.println((char)((columnNumber / 26) + 64));

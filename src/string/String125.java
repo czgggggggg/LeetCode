@@ -5,7 +5,7 @@ package string;
  * @Date 2021/9/5
  * @Description
  */
-public class String0125 {
+public class String125 {
     public static void main(String[] args) {
         String s1 = "A man, a plan, a canal: Panama";
         System.out.println(isPalindrome(s1));

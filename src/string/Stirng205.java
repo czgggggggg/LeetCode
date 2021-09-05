@@ -8,7 +8,7 @@ import java.util.Iterator;
  * @Date 2021/9/6
  * @Description
  */
-public class Stirng0205 {
+public class Stirng205 {
     public static void main(String[] args) {
         System.out.println(isIsomorphic("egg","add"));//true
         System.out.println(isIsomorphic("foo","bar"));//false

@@ -5,7 +5,7 @@ package string;
  * @Date 2021/9/6
  * @Description
  */
-public class String0171 {
+public class String171 {
     public static void main(String[] args) {
 //        System.out.println((char)65);//A
 //        System.out.println((char)90);//Z
