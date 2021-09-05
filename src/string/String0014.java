@@ -5,7 +5,7 @@ package string;
  * @Date 2021/9/5
  * @Description
  */
-public class String14 {
+public class String0014 {
     public static void main(String[] args) {
         String[] strs1 = {"flower","flow","flight"};
         System.out.println(longestCommonPrefix(strs1));
