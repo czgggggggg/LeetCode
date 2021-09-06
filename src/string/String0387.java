@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @Date 2021/9/6
  * @Description
  */
-public class String387 {
+public class String0387 {
     public static void main(String[] args) {
         System.out.println(firstUniqChar("leetcode"));
         System.out.println(firstUniqChar("loveleetcode"));
