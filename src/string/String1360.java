@@ -19,6 +19,8 @@ public class String1360 {
         System.out.println(daysBetweenDates("2021-12-31","2019-12-31"));//366+365=731
         System.out.println(daysBetweenDates("2021-11-30","2019-12-31"));//366+365-31=700
         System.out.println(daysBetweenDates("2000-01-01","1996-01-01"));//366+365+365+365=1461
+
+        System.out.println(daysBetweenDates("1996-10-07","2021-09-09"));//9103
     }
     public static int daysBetweenDates(String date1, String date2) {
         String[] strs1 = date1.split("-");
