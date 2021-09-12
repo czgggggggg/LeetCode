@@ -8,12 +8,13 @@ package test;
 public class TestTime {
     public static void main(String[] args) {
 //        char[] chars = timeGoing(126, 600);
-//        char[] chars = timeGoing(10, 181);
-//        char[] chars = timeGoing(47, 302);
-//        char[] chars = timeGoing(40, 184);
+//        char[] chars = timeGoing(11, 181);
+//        char[] chars = timeGoing(59, 302);
+        char[] chars = timeGoing(55, 184);
 //        char[] chars = timeGoing(196, 388);
+//        char[] chars = timeGoing(36,436);
 //        char[] chars = timeGoing(3, 14);
-        char[] chars = timeGoing(0, 20);
+//        char[] chars = timeGoing(0, 20);
         for(int i = 0; i < chars.length; i++)
             System.out.print(chars[i]);
         System.out.println();
