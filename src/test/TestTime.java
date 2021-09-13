@@ -10,7 +10,7 @@ public class TestTime {
 //        char[] chars = timeGoing(126, 600);
 //        char[] chars = timeGoing(11, 181);
 //        char[] chars = timeGoing(59, 302);
-        char[] chars = timeGoing(55, 184);
+        char[] chars = timeGoing(64, 184);
 //        char[] chars = timeGoing(196, 388);
 //        char[] chars = timeGoing(36,436);
 //        char[] chars = timeGoing(3, 14);
