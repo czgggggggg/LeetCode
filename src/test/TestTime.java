@@ -7,8 +7,8 @@ package test;
  */
 public class TestTime {
     public static void main(String[] args) {
-        printChars(0,13, 181);//时间
-        printChars(1,130, 600);//leetcode
+        printChars(0,14, 181);//时间
+        printChars(1,150, 600);//leetcode
         printChars(2,3, 14);//JavaEE
         printChars(3,0, 20);//SSM框架
         printChars(4,59, 302);//《黑马---并发》
@@ -32,7 +32,7 @@ public class TestTime {
     public static void printChars(int tag, int x, int y){
         switch(tag){
             case 0:
-                System.out.printf("//时间                         %03d/%03d     ",x,y);
+                System.out.printf("//时间                         %03d/%03d    ",x,y);
                 break;
             case 1:
                 System.out.printf("leetcode                     %03d/%03d    ",x,y);
