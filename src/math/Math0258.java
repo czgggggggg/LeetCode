@@ -5,7 +5,7 @@ package math;
  * @Date 2021/9/16
  * @Description
  */
-public class Math258 {
+public class Math0258 {
     public static void main(String[] args) {
         System.out.println(addDigits(38));
         System.out.println(addDigits(111));
