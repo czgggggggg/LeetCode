@@ -64,13 +64,5 @@ public class List0021 {
         return result.next;
     }
 }
-
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
 //输入：l1 = [1,2,4], l2 = [1,3,4]
 //输出：[1,1,2,3,4,4]
