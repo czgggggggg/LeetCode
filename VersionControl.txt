@@ -18,7 +18,8 @@
   Interview02_01（Remove Duplicate Node LCCI）
   Interview02_06（Palindrome Linked List LCCI）//直接复用List0234的代码
   Interview02_07（Intersection of Two Linked Lists LCCI）//直接复用List0160的代码
-  Interview02_03（Delete Middle Node LCCI）////直接复用List0237的代码
+  Interview02_03（Delete Middle Node LCCI）//直接复用List0237的代码
+  Offer0052（两个链表的第一个公共节点  LCOF）//可以直接复用List0160的代码，这里参考了题解的思路写一下空间复杂度位O(1)的解法。//很妙！
 2021/09/23
   List0021（合并两个有序链表）
   List0083（删除排序链表中的重复元素）
