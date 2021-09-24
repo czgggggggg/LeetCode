@@ -15,6 +15,7 @@
   List0706（Design HashMap）//直接用的List，没考虑HashMap的实现原理。
   List0876（Middle of the Linked List）
   List1290（Convert Binary Number in a Linked List to Integer）
+  Interview02_01（Remove Duplicate Node LCCI）
 2021/09/23
   List0021（合并两个有序链表）
   List0083（删除排序链表中的重复元素）
