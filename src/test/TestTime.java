@@ -7,14 +7,14 @@ package test;
  */
 public class TestTime {
     public static void main(String[] args) {
-        printChars(0,14, 181);//时间
-        printChars(1,155, 600);//leetcode
+        printChars(0,27, 181);//时间
+        printChars(1,198, 600);//leetcode
         printChars(2,3, 14);//JavaEE
         printChars(3,0, 20);//SSM框架
         printChars(4,59, 302);//《黑马---并发》
         printChars(5,83,184);//《黑马---JVM》
         printChars(6,196, 388);//《Redis设计与实现》
-        printChars(7,36, 436);//《Java虚拟机实战》
+        printChars(7,45, 436);//《Java虚拟机实战》
     }
 //    public static char[] timeGoing(int x, int y){
 //        char[] chars = new char[102];
