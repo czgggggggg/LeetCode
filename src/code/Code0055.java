@@ -19,7 +19,7 @@ public class Code0055 {
         System.out.println(canJump(nums5));
 
     }
-    //采用的是广度优先遍历的思路
+    //双重循环遍历
     public static boolean canJump(int[] nums) {
         boolean[] canReach = new boolean[nums.length];
         canReach[0] = true;
