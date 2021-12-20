@@ -70,7 +70,7 @@ public class Code0139 {
     public static boolean wordBreak(String s, List<String> wordDict) {
         n = s.length();
         remeber_end = new boolean[n];
-        Arrays.fill(remeber_end,true);//数组元素全部初始化为0，允许一次试错。
+        Arrays.fill(remeber_end,true);//数组元素全部初始化为true，允许一次试错。
         //回溯法求解（此题不需要求所有的解，只要存在一种成立的情况即可返回true）
         return dfs(s,0, wordDict);
     }
@@ -105,6 +105,8 @@ public class Code0139 {
         return false;//false只有在完成当前的遍历仍没有找到解时，才可以向上返回false。
     }
 }
+
+
 
 
 
