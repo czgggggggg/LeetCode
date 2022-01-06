@@ -15,8 +15,12 @@ public class Test {
 //        }else if(a > 0 && b < 0){
 //            System.out.println("test2");
 //        }
-        String a = "9123";
-        String b = "898932839823";
-        System.out.println(a.compareTo(b));
+
+//        String a = "9123";
+//        String b = "898932839823";
+//        System.out.println(a.compareTo(b));
+
+        String str = "12";
+        System.out.println(Integer.valueOf(str) + 1);
     }
 }
