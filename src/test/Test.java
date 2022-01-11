@@ -1,12 +1,15 @@
 package test;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
 /**
  * @Author czgggggggg
  * @Date 2021/9/7
  * @Description
  */
 public class Test {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
 //        System.out.println("01234567".substring(0,3));
 //        int a = 1;
 //        int b = -1;
@@ -20,7 +23,15 @@ public class Test {
 //        String b = "898932839823";
 //        System.out.println(a.compareTo(b));
 
-        String str = "12";
-        System.out.println(Integer.valueOf(str) + 1);
+//        String str = "12";
+//        System.out.println(Integer.valueOf(str) + 1);
+
+//        String string = "2016-10-24 21:59:06";
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        System.out.println(sdf.parse(string));
+
+        String string = "2022-01-10";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        System.out.println(sdf.parse(string));
     }
 }
