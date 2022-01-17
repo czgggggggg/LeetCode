@@ -5,7 +5,7 @@ package code;
  * @Date 2022/1/16
  * @Description
  */
-public class Code1295_2 {
+public class Code1295 {
     public static void main(String[] args) {
         int[] nums1 = {12,345,2,6,7896};
         System.out.println(findNumbers(nums1));
