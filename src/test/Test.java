@@ -30,8 +30,14 @@ public class Test {
 //        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //        System.out.println(sdf.parse(string));
 
-        String string = "2022-01-10";
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        System.out.println(sdf.parse(string));
+//        String string = "2022-01-10";
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//        System.out.println(sdf.parse(string));
+
+        System.out.println(
+                "multiple_files = [('pcaps', (file_name, open(file_path, 'rb'), file_type)) for file_path, file_name in zip(file_paths, file_names)]\n".length() +
+                "# 请求\n".length() +
+                "session = requests.Session()\n".length() +
+                " response = session.post(url, files = multiple_files, data = date)".length());
     }
 }
