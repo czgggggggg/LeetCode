@@ -44,5 +44,11 @@ public class Test {
         System.out.println('z' - 0);
         System.out.println('A' - 0);
         System.out.println('Z' - 0);
+
+        StringBuilder sb = new StringBuilder();
+        char ch = 'a' - 32;
+        sb.append(ch);
+
+        System.out.println(sb.toString());
     }
 }
