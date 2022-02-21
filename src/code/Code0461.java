@@ -28,4 +28,14 @@ public class Code0461 {
 
         return res;
     }
+
+    //官方题解，移位运算
+//    public static int hammingDistance(int x, int y) {
+//        int s = x ^ y, ret = 0;
+//        while (s != 0) {
+//            ret += s & 1;
+//            s >>= 1;//>>= 左边得是变量
+//        }
+//        return ret;
+//    }
 }
