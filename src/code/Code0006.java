@@ -5,7 +5,7 @@
 // * @Date 2022/2/3
 // * @Description
 // */
-//public class Code0006 {
+//public class Microsoft0003 {
 //    public static void main(String[] args) {
 //
 //    }
