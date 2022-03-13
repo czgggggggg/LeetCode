@@ -1,6 +1,6 @@
 package alibaba;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * @Author czgggggggg
@@ -8,43 +8,74 @@ import java.util.Arrays;
  * @Description
  */
 public class Code2_0001 {
+
+    //v0.2...
     public static void main(String[] args) {
-//        int n = 5;
-//        int k = 3;
-//        int[][] a = {{2,11,21},{19,10,1},{20,11,1},{6,15,24},{18,27,36}};
-        int n = 3;
-        int k = 3;
-        int[][] a = {{1,1,1},{1,1,1},{1,1,1},};
-
-        boolean[] visited = new boolean[n];
-        Arrays.fill(visited,false);
-        int count;
-        int res = 0;
-        boolean flag;
-
+        Scanner sc = new Scanner(System.in);
+        int n, k;
+        n = sc.nextInt();
+        k = sc.nextInt();
+        int[][] nums = new int[n][k];
+        int[][] diff = new int[n][k - 1];
         for(int i = 0; i < n; i++){
-            count = 0;
-            if(!visited[i]){
-                visited[i] = true;
-                for(int j = i + 1; j < n; j++){
-                    flag = true;
-                    for(int t = 1; t < k; t++){
-                        if(a[i][t] + a[j][t] != a[i][t - 1] + a[j][t - 1]){
-                            flag = false;
-                            break;
-                        }
-                    }
-                    if(flag){
-                        count++;
-                        visited[j] = true;
-                    }
-                }
+            nums[i][0] = sc.nextInt();
+            for(int j = 1; j < k; j++){
+                nums[i][j] = sc.nextInt();
+                diff[i][j - 1] = nums[i][j] - nums[i][j - 1];
             }
-
-            System.out.println("count = " + count);
-            res += count;
         }
 
-        System.out.println("res = " + res);
+        int count = 0;
+        boolean tag;
+        for(int i = 0; i < n; i++){
+            for(int j = i + 1; j < n; j++){
+                tag = true;
+                for(int t = 0; t < k - 1; t++){
+                    if(diff[i][t] + diff[j][t] != 0){
+                        tag = false;
+                        break;
+                    }
+                }
+                if(tag)
+                    count++;
+            }
+        }
+
+        System.out.println(count);
     }
+
+    //v0.1 超时，过了3/10的样例
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int n, k;
+//        n = sc.nextInt();
+//        k = sc.nextInt();
+//        int[][] nums = new int[n][k];
+//        int[][] diff = new int[n][k - 1];
+//        for(int i = 0; i < n; i++){
+//            nums[i][0] = sc.nextInt();
+//            for(int j = 1; j < k; j++){
+//                nums[i][j] = sc.nextInt();
+//                diff[i][j - 1] = nums[i][j] - nums[i][j - 1];
+//            }
+//        }
+//
+//        int count = 0;
+//        boolean tag;
+//        for(int i = 0; i < n; i++){
+//            for(int j = i + 1; j < n; j++){
+//                tag = true;
+//                for(int t = 0; t < k - 1; t++){
+//                    if(diff[i][t] + diff[j][t] != 0){
+//                        tag = false;
+//                        break;
+//                    }
+//                }
+//                if(tag)
+//                    count++;
+//            }
+//        }
+//
+//        System.out.println(count);
+//    }
 }

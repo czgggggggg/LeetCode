@@ -4,29 +4,28 @@ import java.util.Scanner;
 
 /**
  * @Author czgggggggg
- * @Date 2022/3/8
+ * @Date 2022/3/13
  * @Description
  */
-public class Test07 {
+public class Test05 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int sum;
-
-        while(sc.hasNextLine()){
+        int t;
+        while(n-- > 0){
             sum = 0;
-            String s = sc.nextLine();
-            String[] strs = s.split(" ");
-            for(String str : strs){
-                sum += Integer.valueOf(str);
+            t = sc.nextInt();
+            while(t-- > 0){
+                sum += sc.nextInt();
             }
             System.out.println(sum);
         }
     }
 }
-//1 2 3
-//4 5
-//0 0 0 0 0
+//2
+//4 1 2 3 4
+//5 1 2 3 4 5
 
-//6
-//9
-//0
+//10
+//15
