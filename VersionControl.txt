@@ -2,6 +2,10 @@
 2022/03/14
   ||alibaba-Code2_0004（比例问题）//不会
   //alibaba-Code2_0005（小强修水渠）//过了6/10样例 -> 过了8/10样例
+  alibaba-Code2_0006（国际交流会）
+  alibaba-Test0001  //阿里3.14笔试题（AC）
+  alibaba-Test0002  //阿里3.14笔试题（AC）
+  //alibaba-Test0003  //阿里3.14笔试题（没做出来）
 2022/03/13
   //alibaba-Code2_0001（完美对）//超时，过了3/10的样例
   alibaba-Code2_0002（选择物品）
