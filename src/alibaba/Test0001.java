@@ -14,7 +14,7 @@ public class Test0001 {
         int count = 0;
         char ch;
         for(int i = str.length() - 1; i >= 2; i--){
-            ch = str.charAt(i);;
+            ch = str.charAt(i);
             if(ch == '0')
                 count += 0;
             else if(ch == '1' || ch == '2' || ch == '4' || ch == '8')
