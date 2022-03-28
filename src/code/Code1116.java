@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @Date 2022/3/28
  * @Description
  */
-public class Code1115 {
+public class Code1116 {
     public static void main(String[] args) {
         int n = 5;
         FooBar fooBar = new FooBar(n);
