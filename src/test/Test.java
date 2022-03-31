@@ -40,15 +40,22 @@ public class Test {
 //                "session = requests.Session()\n".length() +
 //                " response = session.post(url, files = multiple_files, data = date)".length());
 
-        System.out.println('a' - 0);
-        System.out.println('z' - 0);
-        System.out.println('A' - 0);
-        System.out.println('Z' - 0);
+//        System.out.println('a' - 0);
+//        System.out.println('z' - 0);
+//        System.out.println('A' - 0);
+//        System.out.println('Z' - 0);
+//
+//        StringBuilder sb = new StringBuilder();
+//        char ch = 'a' - 32;
+//        sb.append(ch);
+//
+//        System.out.println(sb.toString());
 
-        StringBuilder sb = new StringBuilder();
-        char ch = 'a' - 32;
-        sb.append(ch);
-
-        System.out.println(sb.toString());
+//        int a = 1;
+//        Integer b = 1;
+//        System.out.println(a == b);//true
+        int a = 300;
+        Integer b = 300;
+        System.out.println(a == b);//true
     }
 }
