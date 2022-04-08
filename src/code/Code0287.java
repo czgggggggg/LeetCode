@@ -20,8 +20,20 @@ public class Code0287 {
     }
 
     //v0.2
+    //官方题解：对nums数组建图，每个位置 i 连一条 i -> nums[i] 的边。从而将问题转换为求解图中环的入口点问题。
     public static int findDuplicate(int[] nums) {
-
+        int slow = 0, fast = 0;
+        do{
+            slow = nums[slow];//慢指针走一步
+            fast = nums[nums[fast]];//快指针走两步
+        }while(slow != fast);
+        //此时到达第一次的相遇点
+        slow = 0;
+        while(slow != fast){
+            slow = nums[slow];//慢指针走一步
+            fast = nums[fast];//快指针走一步
+        }
+        return slow;//此时到达第二次的相遇点，也就是环的入口点，其数组索引位置就是重复数字，因为数组中有两个位置指向当前位置。
     }
 
     //v0.1
