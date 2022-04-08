@@ -18,34 +18,41 @@ public class Code0287 {
         int[] nums5 = {4,2,1,3,3};
         System.out.println(findDuplicate(nums5));//3
     }
-    public static int findDuplicate(int[] nums) {
-        int n = nums.length;
-        int i;
-        int tmp, old_tmp;
-        for(i = 0; i < n; i++){
-            if(nums[i] == i + 1)
-                continue;
-            else{
-                tmp = nums[i];
-                nums[i] = -1;
-                while(true){
-                    if(tmp == nums[tmp - 1]){
-                        return tmp;
-                    }
-                    if(nums[tmp - 1] == -1){
-                        nums[tmp - 1] = tmp;
-                        break;
-                    }
-                    old_tmp = tmp;
-                    tmp = nums[tmp - 1];
-                    if(tmp == old_tmp){
-                        break;
-                    }
-                    nums[old_tmp - 1] = old_tmp;
-                }
-            }
-        }
 
-        return -1;
+    //v0.2
+    public static int findDuplicate(int[] nums) {
+
     }
+
+    //v0.1
+//    public static int findDuplicate(int[] nums) {
+//        int n = nums.length;
+//        int i;
+//        int tmp, old_tmp;
+//        for(i = 0; i < n; i++){
+//            if(nums[i] == i + 1)
+//                continue;
+//            else{
+//                tmp = nums[i];
+//                nums[i] = -1;
+//                while(true){
+//                    if(tmp == nums[tmp - 1]){
+//                        return tmp;
+//                    }
+//                    if(nums[tmp - 1] == -1){
+//                        nums[tmp - 1] = tmp;
+//                        break;
+//                    }
+//                    old_tmp = tmp;
+//                    tmp = nums[tmp - 1];
+//                    if(tmp == old_tmp){
+//                        break;
+//                    }
+//                    nums[old_tmp - 1] = old_tmp;
+//                }
+//            }
+//        }
+//
+//        return -1;
+//    }
 }
