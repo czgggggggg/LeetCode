@@ -84,6 +84,36 @@ public class Code0101 {
         //【注！】v0.1版代码最后一个样例不通过！！！
     }
 
+
+    //v0.3  20220413再做  用中序遍历的结果做对称比较是不可行的，最后一个样例不能通过。
+//    public static boolean isSymmetric(TreeNode root) {
+//        List<Integer> list = new ArrayList<>();
+//        orderVisit(root, list);
+//        int n = list.size();
+//        int[] arr = new int[n];
+//        int cur = 0;
+//        Iterator<Integer> iterator = list.iterator();
+//        while(iterator.hasNext()){
+//            arr[cur++] = iterator.next();
+//        }
+//        for(int i = 0; i < n / 2; i++){
+//            if(arr[i] != arr[n - i - 1])
+//                return false;
+//        }
+//
+//        return true;
+//    }
+//    public static void orderVisit(TreeNode root, List<Integer> list){
+//        if(root == null)
+//            return;
+//
+//        orderVisit(root.left, list);
+//        list.add(root.val);
+//        orderVisit(root.right, list);
+//    }
+
+
+    //v0.2官方题解版本
     public static boolean isSymmetric(TreeNode root) {
         return check(root, root);
     }
@@ -97,8 +127,6 @@ public class Code0101 {
         }
         return p.val == q.val && check(p.left, q.right) && check(p.right, q.left);
     }
-
-
 
 
     //v0.1

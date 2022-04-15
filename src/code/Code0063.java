@@ -28,7 +28,7 @@ public class Code0063 {
         for(int i = 0; i < m; i++){
             if(obstacleGrid[i][0] == 1){
                 for(int t = i; t < m; t++)
-                    paths[i][0] = 0;
+                    paths[t][0] = 0;
                 break;
             }
             paths[i][0] = 1;
@@ -36,7 +36,7 @@ public class Code0063 {
         for(int j = 0; j < n; j++){
             if(obstacleGrid[0][j] == 1){
                 for(int t = j; t < n; t++)
-                    paths[0][j] = 0;
+                    paths[0][t] = 0;
                 break;
             }
             paths[0][j] = 1;

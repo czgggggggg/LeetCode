@@ -1,8 +1,6 @@
 package code;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * @Author czgggggggg
@@ -65,45 +63,62 @@ public class Code0139 {
         //false
     }
 
-
-    //------------------------------v0.3---------------------------------------
+    //------------------------------v0.4---------------------------------------
+    //我的解法（dfs）逻辑太过复杂，官方题解：
     public static boolean wordBreak(String s, List<String> wordDict) {
-        n = s.length();
-        remeber_end = new boolean[n];
-        Arrays.fill(remeber_end,true);//数组元素全部初始化为true，允许一次试错。
-        //回溯法求解（此题不需要求所有的解，只要存在一种成立的情况即可返回true）
-        return dfs(s,0, wordDict);
-    }
-
-    public static boolean dfs(String s, int i, List<String> wordDict) {
-        if (i == n) {
-            return true;
-        }
-
-        for (String word : wordDict) {
-            int len = word.length();
-            if (i + len <= n) {
-                if (s.substring(i, i + len).equals(word)) {
-                    //引入记忆数组
-                    if (remeber_end[i]) {//这里体现了remeber_end数组元素全部初始化为true的重要性，否则程序不会进入这个判断条件，允许一次试错
-                        if (dfs(s, i + len, wordDict)) {
-                            {
-                                if(i + len < n){//i + len == n时dfs()也会向上返回true，此处判断避免了数组越界。
-                                    remeber_end[i + len] = true;//dfs(s, i + len, wordDict)返回true，说明s[i+len -> n]是可分割的，记忆该情况，避免以后重复计算。
-                                }
-                                return true;//def(s,i+1)结果为true，立即向上返回true。
-                            }
-
-                        }
-                    }
-                } else
-                    continue;
+        HashSet<String> wordDictSet = new HashSet(wordDict);
+        boolean[] dp = new boolean[s.length() + 1];
+        dp[0] = true;
+        for (int i = 1; i <= s.length(); i++) {
+            for (int j = 0; j < i; j++) {
+                if (dp[j] && wordDictSet.contains(s.substring(j, i))) {
+                    dp[i] = true;
+                    break;
+                }
             }
         }
-
-        remeber_end[i] = false;//说明s[i+len -> n]是不可分割的，记忆该情况，避免以后重复计算。
-        return false;//false只有在完成当前的遍历仍没有找到解时，才可以向上返回false。
+        return dp[s.length()];
     }
+
+
+    //------------------------------v0.3---------------------------------------
+//    public static boolean wordBreak(String s, List<String> wordDict) {
+//        n = s.length();
+//        remeber_end = new boolean[n];
+//        Arrays.fill(remeber_end,true);//数组元素全部初始化为true，允许一次试错。
+//        //回溯法求解（此题不需要求所有的解，只要存在一种成立的情况即可返回true）
+//        return dfs(s,0, wordDict);
+//    }
+//
+//    public static boolean dfs(String s, int i, List<String> wordDict) {
+//        if (i == n) {
+//            return true;
+//        }
+//
+//        for (String word : wordDict) {
+//            int len = word.length();
+//            if (i + len <= n) {
+//                if (s.substring(i, i + len).equals(word)) {
+//                    //引入记忆数组
+//                    if (remeber_end[i]) {//这里体现了remeber_end数组元素全部初始化为true的重要性，否则程序不会进入这个判断条件，允许一次试错
+//                        if (dfs(s, i + len, wordDict)) {
+//                            {
+//                                if(i + len < n){//i + len == n时dfs()也会向上返回true，此处判断避免了数组越界。
+//                                    remeber_end[i + len] = true;//dfs(s, i + len, wordDict)返回true，说明s[i+len -> n]是可分割的，记忆该情况，避免以后重复计算。
+//                                }
+//                                return true;//def(s,i+1)结果为true，立即向上返回true。
+//                            }
+//
+//                        }
+//                    }
+//                } else
+//                    continue;
+//            }
+//        }
+//
+//        remeber_end[i] = false;//说明s[i+len -> n]是不可分割的，记忆该情况，避免以后重复计算。
+//        return false;//false只有在完成当前的遍历仍没有找到解时，才可以向上返回false。
+//    }
 }
 
 

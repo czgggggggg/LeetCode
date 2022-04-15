@@ -29,7 +29,7 @@ public class Code0114 {
         preVisit(root);
     }
 
-    //v0.2 根据官方题解思路写的代码（寻找左子树最右边的节点）//但是没太理解原理
+    //v0.2 根据官方题解思路写的代码（寻找左子树最右边的节点）
     public static void flatten(TreeNode root) {
         TreeNode cur = root;
         while(cur!= null){
