@@ -10,7 +10,8 @@ import java.util.Arrays;
 public class Other0003_3 {
     public static void main(String[] args) {
 //        int[] arr = {6,5,4,3,2,1};
-        int[] arr = {6,8,3,5,4,4,8,3,2,1,1};
+//        int[] arr = {6,8,3,5,4,4,8,3,2,1,1};
+        int[] arr = {4,6,8,4,6,4,5,1,9,8,9};
         int n = arr.length;
         quicksort(arr, 0, n - 1);
         System.out.println(Arrays.toString(arr));
