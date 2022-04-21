@@ -13,8 +13,8 @@ public class Code0279 {
         System.out.println(numSquares(4));//1
         System.out.println(numSquares(5));//2
 
-        System.out.println(numSquares(12));
-        System.out.println(numSquares(13));
+        System.out.println(numSquares(12));//3
+        System.out.println(numSquares(13));//2
     }
     public static int numSquares(int n) {
         int[] nums = new int[101];
@@ -28,8 +28,8 @@ public class Code0279 {
             int min = i;
             for(int k = 1; k <= 100; k++){
                 if(nums[k] == i){
-                    res[i] = 1;
                     min = 1;//
+                    break;
                 }else if(nums[k] < i){
                     min = Math.min(min,res[i - nums[k]] + 1);
                 }else{
