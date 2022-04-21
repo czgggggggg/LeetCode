@@ -3,6 +3,7 @@
   Code0429（N叉树的层序遍历）//树、中等
   Code0589（N叉树的前序遍历）//树、简单
   Code0590（N叉树的后序遍历）//树、简单
+  Other0005（生产者消费者问题）//多线程//wait()、notifyAll()、synchronized(LOCK)、对象锁
 2022/04/16
   amazon_Code0001
   amazon_Code0002
